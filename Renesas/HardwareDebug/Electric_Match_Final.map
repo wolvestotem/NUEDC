@@ -1,0 +1,1441 @@
+Renesas Optimizing Linker (W2.06.00 )             13-Aug-2017 04:47:33
+
+*** Options ***
+
+-subcommand=LinkerSubCommand.tmp
+-input="./src/Bluetooth_Decoder/Bluetooth_Decoder.obj"
+-input="./src/Mavlink/Mavlink_Head.obj"
+-input="./src/OpenMV/OpenMV.obj"
+-input="./src/PathSeeking/PathSeeking.obj"
+-input="./src/Safety_Switch/Safety_Switch.obj"
+-input="./src/Sc_AlgorithmTools/Sc_AlgorithmTools.obj"
+-input="./src/Sc_CopterControl/Sc_CopterControl.obj"
+-input="./src/Sc_PID/Sc_PID.obj"
+-input="./src/Sc_Serial_Library_new/Sc_Serial_Library_new.obj"
+-input="./src/Self_Check/Self_Check.obj"
+-input="./src/cg_src/r_cg_cgc.obj"
+-input="./src/cg_src/r_cg_cgc_user.obj"
+-input="./src/cg_src/r_cg_cmt.obj"
+-input="./src/cg_src/r_cg_cmt_user.obj"
+-input="./src/cg_src/r_cg_dbsct.obj"
+-input="./src/cg_src/r_cg_hardware_setup.obj"
+-input="./src/cg_src/r_cg_intprg.obj"
+-input="./src/cg_src/r_cg_main.obj"
+-input="./src/cg_src/r_cg_port.obj"
+-input="./src/cg_src/r_cg_port_user.obj"
+-input="./src/cg_src/r_cg_resetprg.obj"
+-input="./src/cg_src/r_cg_rspi.obj"
+-input="./src/cg_src/r_cg_rspi_user.obj"
+-input="./src/cg_src/r_cg_sbrk.obj"
+-input="./src/cg_src/r_cg_sci.obj"
+-input="./src/cg_src/r_cg_sci_user.obj"
+-input="./src/cg_src/r_cg_vecttbl.obj"
+-input="./src/stdafx.obj"
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,PIntPRG,P/0FFFE0000,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC
+-library=E:\TECHNI~1\ELECTR~1\ELECTR~1\HARDWA~2\Electric_Match_Final.lib
+-library=E:\Technical events\electric match 2017\Electric_Match_Final\src\Mavlink\Mavlink_lib.lib
+-noprelink
+-list=Electric_Match_Final.map
+-show
+-nooptimize
+-debug
+-output=E:\Technical events\electric match 2017\Electric_Match_Final\HardwareDebug\Electric_Match_Final.abs
+-rom=D=R,D_1=R_1,D_2=R_2
+-nocompress
+-nomessage
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+SU
+                                  00000004  00000103       100   4
+SI
+                                  00000104  00000403       300   4
+B_1
+                                  00000404  00000da6       9a3   1
+R_1
+                                  00000da7  00000df9        53   1
+B_2
+                                  00000dfa  0000120b       412   2
+R_2
+                                  0000120c  00001219         e   2
+B
+                                  0000121c  000018c7       6ac   4
+R
+                                  000018c8  00001c4b       384   4
+PResetPRG
+                                  fffe0000  fffe003d        3e   1
+C_1
+                                  fffe003e  fffe020f       1d2   1
+C_2
+                                  fffe0210  fffe0411       202   2
+C
+                                  fffe0414  fffe057b       168   4
+C$DSEC
+                                  fffe057c  fffe059f        24   4
+C$BSEC
+                                  fffe05a0  fffe05b7        18   4
+C$INIT
+                                  fffe05b8  fffe05bb         4   4
+C$VECT
+                                  fffe05bc  fffe09bb       400   4
+C$VTBL
+                                  fffe09bc  fffe09bc         0   1
+D
+                                  fffe09bc  fffe0d3f       384   4
+D_2
+                                  fffe0d40  fffe0d4d         e   2
+D_1
+                                  fffe0d4e  fffe0da0        53   1
+W
+                                  fffe0da4  fffe0da4         0   4
+W_1
+                                  fffe0da4  fffe0da4         0   1
+W_2
+                                  fffe0da4  fffe0db9        16   2
+L
+                                  fffe0dbc  fffe0f14       159   4
+PIntPRG
+                                  fffe0f15  fffe0f22         e   1
+P
+                                  fffe0f23  fffe5d01      4ddf   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=SU
+FILE=.\src\cg_src\r_cg_resetprg.obj
+                                  00000004  00000103       100
+
+SECTION=SI
+FILE=.\src\cg_src\r_cg_resetprg.obj
+                                  00000104  00000403       300
+
+SECTION=B_1
+FILE=sample1
+                                  00000404  00000da6       9a3
+  _m
+                                  00000404       52b   data ,g        16
+  _m_mavlink_status$1
+                                  0000092f        38   data ,l         1
+  _m_mavlink_buffer$2
+                                  00000967       440   data ,l         1
+
+SECTION=R_1
+FILE=.\src\cg_src\r_cg_sci.obj
+                                  00000da7  00000da8         2
+  _sci1_tx_idle_token
+                                  00000da7         1   data ,g         2
+  _sci5_tx_idle_token
+                                  00000da8         1   data ,g         2
+FILE=xfiles
+                                  00000da9  00000df8        50
+  _ebuf
+                                  00000da9        50   data ,l         5
+FILE=xstate
+                                  00000df9  00000df9         1
+  __Mbcurmax
+                                  00000df9         1   data ,g         1
+
+SECTION=B_2
+FILE=.\src\cg_src\r_cg_rspi.obj
+                                  00000dfa  00000dff         6
+  _g_rspi0_tx_count
+                                  00000dfa         2   data ,g         2
+  _g_rspi0_rx_count
+                                  00000dfc         2   data ,g         2
+  _g_rspi0_rx_length
+                                  00000dfe         2   data ,g         2
+FILE=.\src\cg_src\r_cg_sbrk.obj
+                                  00000e00  000011ff       400
+  _heap_area
+                                  00000e00       400   data ,l         2
+FILE=.\src\cg_src\r_cg_sci.obj
+                                  00001200  0000120b         c
+  _g_sci1_tx_count
+                                  00001200         2   data ,g         1
+  _g_sci1_rx_count
+                                  00001202         2   data ,g         1
+  _g_sci1_rx_length
+                                  00001204         2   data ,g         1
+  _g_sci5_tx_count
+                                  00001206         2   data ,g         1
+  _g_sci5_rx_count
+                                  00001208         2   data ,g         1
+  _g_sci5_rx_length
+                                  0000120a         2   data ,g         1
+
+SECTION=R_2
+FILE=.\src\Bluetooth_Decoder\Bluetooth_Decoder.obj
+                                  0000120c  0000120d         2
+  _Land_Enabled
+                                  0000120c         2   data ,l         3
+FILE=.\src\Self_Check\Self_Check.obj
+                                  0000120e  0000120f         2
+  _self_checked_token
+                                  0000120e         2   data ,g         1
+FILE=.\src\cg_src\r_cg_sci_user.obj
+                                  00001210  00001217         8
+  _sci1_rx_count
+                                  00001210         2   data ,g         3
+  _sci1_tx_count
+                                  00001212         2   data ,g         2
+  _sci5_rx_count
+                                  00001214         2   data ,g         3
+  _sci5_tx_count
+                                  00001216         2   data ,g         2
+FILE=.\src\stdafx.obj
+                                  00001218  00001219         2
+  _Global_Start_Token
+                                  00001218         2   data ,l         3
+
+SECTION=B
+FILE=.\src\Bluetooth_Decoder\Bluetooth_Decoder.obj
+                                  0000121c  00001247        2c
+  _DataNode
+                                  0000121c         4   data ,l         3
+  _Circle
+                                  00001220        28   data ,l         1
+FILE=.\src\cg_src\r_cg_rspi.obj
+                                  00001248  0000124f         8
+  _gp_rspi0_tx_address
+                                  00001248         4   data ,g         2
+  _gp_rspi0_rx_address
+                                  0000124c         4   data ,g         2
+FILE=.\src\cg_src\r_cg_sci.obj
+                                  00001250  0000125f        10
+  _gp_sci1_tx_address
+                                  00001250         4   data ,g         1
+  _gp_sci1_rx_address
+                                  00001254         4   data ,g         1
+  _gp_sci5_tx_address
+                                  00001258         4   data ,g         1
+  _gp_sci5_rx_address
+                                  0000125c         4   data ,g         1
+FILE=.\src\cg_src\r_cg_sci_user.obj
+                                  00001260  000018bf       660
+  _sci1_rx_circle
+                                  00001260       200   data ,g         1
+  _current_sci1_rx_addr
+                                  00001460         4   data ,g         4
+  _read_sci1_rx_addr
+                                  00001464         4   data ,g         4
+  _sci1_tx_circle
+                                  00001468       120   data ,g         1
+  _current_sci1_tx_addr
+                                  00001588         4   data ,g         3
+  _wait_sci1_tx_addr
+                                  0000158c         4   data ,g         2
+  _sci5_rx_circle
+                                  00001590       200   data ,g         1
+  _current_sci5_rx_addr
+                                  00001790         4   data ,g         4
+  _read_sci5_rx_addr
+                                  00001794         4   data ,g         4
+  _sci5_tx_circle
+                                  00001798       120   data ,g         1
+  _current_sci5_tx_addr
+                                  000018b8         4   data ,g         3
+  _wait_sci5_tx_addr
+                                  000018bc         4   data ,g         2
+FILE=_errno
+                                  000018c0  000018c3         4
+  __errno
+                                  000018c0         4   data ,g         4
+FILE=dtor_list
+                                  000018c4  000018c7         4
+  _needed_destruction_head
+                                  000018c4         4   data ,l         2
+
+SECTION=R
+FILE=.\src\Bluetooth_Decoder\Bluetooth_Decoder.obj
+                                  000018c8  000018cf         8
+  _QueueToBeChecked
+                                  000018c8         8   data ,l         1
+FILE=.\src\OpenMV\OpenMV.obj
+                                  000018d0  000018f3        24
+  _nav_dat
+                                  000018d0         c   data ,g         1
+  _EMD
+                                  000018dc        18   data ,g         a
+FILE=.\src\PathSeeking\PathSeeking.obj
+                                  000018f4  0000199b        a8
+  _Xblack_param
+                                  000018f4        1c   data ,g         4
+  _Yblack_param
+                                  00001910        1c   data ,g         4
+  _Xcar_param
+                                  0000192c        1c   data ,g         3
+  _Ycar_param
+                                  00001948        1c   data ,g         3
+  _Xfollow_param
+                                  00001964        1c   data ,g         1
+  _Yfollow_param
+                                  00001980        1c   data ,g         1
+FILE=.\src\Sc_CopterControl\Sc_CopterControl.obj
+                                  0000199c  0000199f         4
+  _SoftWareHeadAngle
+                                  0000199c         4   data ,l         4
+FILE=.\src\cg_src\r_cg_cmt_user.obj
+                                  000019a0  000019a3         4
+  _runtime
+                                  000019a0         4   data ,l         3
+FILE=.\src\cg_src\r_cg_rspi.obj
+                                  000019a4  000019a7         4
+  _senddata
+                                  000019a4         4   data ,g         2
+FILE=.\src\cg_src\r_cg_rspi_user.obj
+                                  000019a8  000019af         8
+  _spi_rx_idle
+                                  000019a8         4   data ,g         2
+  _spi_tx_idle
+                                  000019ac         4   data ,g         1
+FILE=.\src\cg_src\r_cg_sbrk.obj
+                                  000019b0  000019b3         4
+  _brk
+                                  000019b0         4   data ,l         1
+FILE=malloc
+                                  000019b4  000019bb         8
+  __Aldata
+                                  000019b4         8   data ,g         3
+FILE=sample1
+                                  000019bc  000019c7         c
+  ___T1000046$4
+                                  000019bc         c   data ,l         1
+FILE=sincosfsub
+                                  000019c8  00001a03        3c
+  _sinf_coeff
+                                  000019c8        10   data ,l         1
+  _cosf_coeff
+                                  000019d8        10   data ,l         1
+  _pi4ptr_table
+                                  000019e8         c   data ,l         1
+  _sub_table
+                                  000019f4        10   data ,l         1
+FILE=xprintf
+                                  00001a04  00001a07         4
+  _stderr
+                                  00001a04         4   data ,g         0
+FILE=xfiles
+                                  00001a08  00001adf        d8
+  __Stdin
+                                  00001a08        48   data ,g         7
+  __Stdout
+                                  00001a50        48   data ,g         7
+  __Stderr
+                                  00001a98        48   data ,g         3
+FILE=xctype
+                                  00001ae0  00001ae7         8
+  __Ctype
+                                  00001ae0         4   data ,g         2
+  __Tls_setup__Ctype
+                                  00001ae4         4   data ,g         1
+FILE=vars
+                                  00001ae8  00001aef         8
+  __new_handler
+                                  00001ae8         4   data ,g         1
+  ___head
+                                  00001aec         4   data ,g         0
+FILE=new_cnst
+                                  00001af0  00001af3         4
+  __ec2p_new_handler
+                                  00001af0         4   data ,g         1
+FILE=xstate
+                                  00001af4  00001b3b        48
+  __Tls_setup__Mbcurmax
+                                  00001af4         4   data ,g         1
+  __Mbstate
+                                  00001af8        40   data ,g         2
+  __Tls_setup__Mbstate
+                                  00001b38         4   data ,g         2
+FILE=localeco
+                                  00001b3c  00001b8f        54
+  __Locale
+                                  00001b3c        50   data ,g         1
+  __Tls_setup__Locale
+                                  00001b8c         4   data ,g         0
+FILE=xwcstate
+                                  00001b90  00001bd3        44
+  __Wcstate
+                                  00001b90        40   data ,g         2
+  __Tls_setup__Wcstate
+                                  00001bd0         4   data ,g         2
+FILE=xfvalues
+                                  00001bd4  00001c4b        78
+  __FDenorm
+                                  00001bd4        10   data ,g         0
+  __FEps
+                                  00001be4        10   data ,g         0
+  __FHugeval
+                                  00001bf4        10   data ,g         0
+  __FInf
+                                  00001c04        10   data ,g         1
+  __FNan
+                                  00001c14        10   data ,g         0
+  __FSnan
+                                  00001c24        10   data ,g         0
+  __FRteps
+                                  00001c34        10   data ,g         0
+  __FXbig
+                                  00001c44         4   data ,g         0
+  __FZero
+                                  00001c48         4   data ,g         0
+
+SECTION=PResetPRG
+FILE=.\src\cg_src\r_cg_resetprg.obj
+                                  fffe0000  fffe003d        3e
+  _PowerON_Reset_PC
+                                  fffe0000        3e   entry,g         1
+
+SECTION=C_1
+FILE=sample1
+                                  fffe003e  fffe013d       100
+  _mavlink_message_crcs$3
+                                  fffe003e       100   data ,l         1
+FILE=xprintf
+                                  fffe013e  fffe0147         a
+  _fchar$1
+                                  fffe013e         a   data ,l         1
+FILE=xputtxt
+                                  fffe0148  fffe01ec        a5
+  _spaces
+                                  fffe0148        21   data ,l         1
+  _zeroes
+                                  fffe0169        21   data ,l         1
+  _asterisk
+                                  fffe018a        21   data ,l         1
+  _plus
+                                  fffe01ab        21   data ,l         1
+  _minus
+                                  fffe01cc        21   data ,l         1
+FILE=xlitob
+                                  fffe01ed  fffe020e        22
+  _ldigs
+                                  fffe01ed        11   data ,l         1
+  _udigs
+                                  fffe01fe        11   data ,l         1
+FILE=localeco
+                                  fffe020f  fffe020f         1
+  _null
+                                  fffe020f         1   data ,l         d
+
+SECTION=C_2
+FILE=xctype
+                                  fffe0210  fffe0411       202
+  _ctyp_tab
+                                  fffe0210       202   data ,l         1
+
+SECTION=C
+FILE=.\src\Sc_CopterControl\Sc_CopterControl.obj
+                                  fffe0414  fffe0417         4
+  _RealHeadAngle
+                                  fffe0414         4   data ,g         0
+FILE=.\src\cg_src\r_cg_dbsct.obj
+                                  fffe0418  fffe044b        34
+  __CTBL
+                                  fffe0418        34   data ,g         0
+FILE=xprintf
+                                  fffe044c  fffe0463        18
+  _fbit$2
+                                  fffe044c        18   data ,l         1
+FILE=_sbrk_si
+                                  fffe0464  fffe0467         4
+  __sbrk_size
+                                  fffe0464         4   data ,g         1
+FILE=_in_exps
+                                  fffe0468  fffe049f        38
+  _exp_lcoef$2
+                                  fffe0468        1c   data ,l         1
+  _exp_hcoef$1
+                                  fffe0484        1c   data ,l         1
+FILE=_in_logs
+                                  fffe04a0  fffe04bf        20
+  _log_coef$3
+                                  fffe04a0        20   data ,l         1
+FILE=consts
+                                  fffe04c0  fffe0517        58
+  __IFZEROS
+                                  fffe04c0         4   data ,g         4
+  __IFONES
+                                  fffe04c4         4   data ,g         3
+  __HALFS
+                                  fffe04c8         4   data ,g         1
+  __QUOTS
+                                  fffe04cc         4   data ,g         0
+  __TWOS
+                                  fffe04d0         4   data ,g         0
+  __FOURS
+                                  fffe04d4         4   data ,g         0
+  __PAIS
+                                  fffe04d8         4   data ,g         0
+  __2PAIS
+                                  fffe04dc         4   data ,g         0
+  __HLFPAIS
+                                  fffe04e0         4   data ,g         0
+  __QUOPAIS
+                                  fffe04e4         4   data ,g         0
+  __LOGE2S
+                                  fffe04e8         4   data ,g         2
+  __NIFZEROS
+                                  fffe04ec         4   data ,g         1
+  __NIFONES
+                                  fffe04f0         4   data ,g         1
+  __NHALFS
+                                  fffe04f4         4   data ,g         0
+  __NQUOTS
+                                  fffe04f8         4   data ,g         0
+  __NTWOS
+                                  fffe04fc         4   data ,g         0
+  __NFOURS
+                                  fffe0500         4   data ,g         0
+  __NPAIS
+                                  fffe0504         4   data ,g         0
+  __N2PAIS
+                                  fffe0508         4   data ,g         0
+  __NHLFPAIS
+                                  fffe050c         4   data ,g         0
+  __NQUOPAIS
+                                  fffe0510         4   data ,g         0
+  __NLOGE2S
+                                  fffe0514         4   data ,g         0
+FILE=_const
+                                  fffe0518  fffe053b        24
+  __IFNAND
+                                  fffe0518         0   none ,g         0
+  __IFINFD
+                                  fffe0520         0   none ,g         0
+  __NIFINFD
+                                  fffe0528         0   none ,g         0
+  __IFNANS
+                                  fffe0530         0   none ,g         5
+  __IFINFS
+                                  fffe0534         0   none ,g         3
+  __NIFINFS
+                                  fffe0538         0   none ,g         2
+FILE=xldtob
+                                  fffe053c  fffe0553        18
+  _pows
+                                  fffe053c        18   data ,l         1
+FILE=floatval
+                                  fffe0554  fffe057b        28
+  __FLT_MAX_VAL
+                                  fffe0554         0   none ,g         1
+  __FLT_MIN_VAL
+                                  fffe0558         0   none ,g         0
+  __DBL_MAX_VAL
+                                  fffe055c         0   none ,g         0
+  __DBL_MIN_VAL
+                                  fffe0564         0   none ,g         0
+  __LDBL_MAX_VAL
+                                  fffe056c         0   none ,g         0
+  __LDBL_MIN_VAL
+                                  fffe0574         0   none ,g         0
+
+SECTION=C$DSEC
+FILE=.\src\cg_src\r_cg_dbsct.obj
+                                  fffe057c  fffe059f        24
+  __DTBL
+                                  fffe057c        24   data ,g         0
+
+SECTION=C$BSEC
+FILE=.\src\cg_src\r_cg_dbsct.obj
+                                  fffe05a0  fffe05b7        18
+  __BTBL
+                                  fffe05a0        18   data ,g         0
+
+SECTION=C$INIT
+FILE=sample1
+                                  fffe05b8  fffe05bb         4
+  ___link
+                                  fffe05b8         4   data ,l         0
+
+SECTION=C$VECT
+FILE=.\src\cg_src\r_cg_dbsct.obj
+                                  fffe05bc  fffe09bb       400
+
+SECTION=D
+FILE=.\src\Bluetooth_Decoder\Bluetooth_Decoder.obj
+                                  fffe09bc  fffe09c3         8
+FILE=.\src\OpenMV\OpenMV.obj
+                                  fffe09c4  fffe09e7        24
+FILE=.\src\PathSeeking\PathSeeking.obj
+                                  fffe09e8  fffe0a8f        a8
+FILE=.\src\Sc_CopterControl\Sc_CopterControl.obj
+                                  fffe0a90  fffe0a93         4
+FILE=.\src\cg_src\r_cg_cmt_user.obj
+                                  fffe0a94  fffe0a97         4
+FILE=.\src\cg_src\r_cg_rspi.obj
+                                  fffe0a98  fffe0a9b         4
+FILE=.\src\cg_src\r_cg_rspi_user.obj
+                                  fffe0a9c  fffe0aa3         8
+FILE=.\src\cg_src\r_cg_sbrk.obj
+                                  fffe0aa4  fffe0aa7         4
+FILE=malloc
+                                  fffe0aa8  fffe0aaf         8
+FILE=sample1
+                                  fffe0ab0  fffe0abb         c
+FILE=sincosfsub
+                                  fffe0abc  fffe0af7        3c
+FILE=xprintf
+                                  fffe0af8  fffe0afb         4
+FILE=xfiles
+                                  fffe0afc  fffe0bd3        d8
+FILE=xctype
+                                  fffe0bd4  fffe0bdb         8
+FILE=vars
+                                  fffe0bdc  fffe0be3         8
+FILE=new_cnst
+                                  fffe0be4  fffe0be7         4
+FILE=xstate
+                                  fffe0be8  fffe0c2f        48
+FILE=localeco
+                                  fffe0c30  fffe0c83        54
+FILE=xwcstate
+                                  fffe0c84  fffe0cc7        44
+FILE=xfvalues
+                                  fffe0cc8  fffe0d3f        78
+
+SECTION=D_2
+FILE=.\src\Bluetooth_Decoder\Bluetooth_Decoder.obj
+                                  fffe0d40  fffe0d41         2
+FILE=.\src\Self_Check\Self_Check.obj
+                                  fffe0d42  fffe0d43         2
+FILE=.\src\cg_src\r_cg_sci_user.obj
+                                  fffe0d44  fffe0d4b         8
+FILE=.\src\stdafx.obj
+                                  fffe0d4c  fffe0d4d         2
+
+SECTION=D_1
+FILE=.\src\cg_src\r_cg_sci.obj
+                                  fffe0d4e  fffe0d4f         2
+FILE=xfiles
+                                  fffe0d50  fffe0d9f        50
+FILE=xstate
+                                  fffe0da0  fffe0da0         1
+
+SECTION=W_2
+FILE=sample1
+                                  fffe0da4  fffe0db9        16
+
+SECTION=L
+FILE=.\src\Bluetooth_Decoder\Bluetooth_Decoder.obj
+                                  fffe0dbc  fffe0dc7         c
+FILE=.\src\PathSeeking\PathSeeking.obj
+                                  fffe0dc8  fffe0de5        1e
+FILE=.\src\Sc_CopterControl\Sc_CopterControl.obj
+                                  fffe0de8  fffe0e0a        23
+FILE=.\src\Sc_Serial_Library_new\Sc_Serial_Library_new.obj
+                                  fffe0e0c  fffe0e16         b
+FILE=.\src\stdafx.obj
+                                  fffe0e18  fffe0e3c        25
+FILE=sample1
+                                  fffe0e40  fffe0ed5        96
+FILE=xprintf
+                                  fffe0ed8  fffe0ede         7
+FILE=xldtob
+                                  fffe0ee0  fffe0f01        22
+FILE=xgenld
+                                  fffe0f04  fffe0f05         2
+FILE=localeco
+                                  fffe0f08  fffe0f14         d
+
+SECTION=PIntPRG
+FILE=.\src\cg_src\r_cg_intprg.obj
+                                  fffe0f15  fffe0f22         e
+  _r_undefined_exception
+                                  fffe0f15         2   func ,g         1
+  _r_privileged_exception
+                                  fffe0f17         2   func ,g         1
+  _r_floatingpoint_exception
+                                  fffe0f19         2   func ,g         1
+  _r_access_exception
+                                  fffe0f1b         2   func ,g         1
+  _r_reserved_exception
+                                  fffe0f1d         2   func ,g        13
+  _r_nmi_exception
+                                  fffe0f1f         2   func ,g         1
+  _r_brk_exception
+                                  fffe0f21         2   func ,g         0
+
+SECTION=P
+FILE=.\src\Bluetooth_Decoder\Bluetooth_Decoder.obj
+                                  fffe0f23  fffe0fcc        aa
+  _Decoder_Init
+                                  fffe0f23        2e   func ,g         1
+  _Data_Check
+                                  fffe0f51        52   func ,l         1
+  _Decoder_Recv
+                                  fffe0fa3        17   func ,g         1
+  _Land_Reset
+                                  fffe0fba         a   func ,g         2
+  _Decode_Land
+                                  fffe0fc4         9   func ,g         1
+FILE=.\src\Mavlink\Mavlink_Head.obj
+                                  fffe0fcd  fffe11a1       1d5
+  _abort
+                                  fffe0fcd         1   func ,g         1
+  _get_Copter_Height
+                                  fffe0fce         7   func ,g         6
+  _Copter_PreArm
+                                  fffe0fd5         4   func ,g         2
+  _Wait_For_Take_Off
+                                  fffe0fd9        54   func ,g         1
+  _Take_Off
+                                  fffe102d        9d   func ,g         3
+  _Copter_Land
+                                  fffe10ca         4   func ,g         0
+  _Copter_New_Land
+                                  fffe10ce        2f   func ,g         1
+  _Copter_New_Land_Optional
+                                  fffe10fd        2e   func ,g         1
+  _Copter_Level_Calibration
+                                  fffe112b        57   func ,g         1
+  _MavLink_Start
+                                  fffe1182        1c   func ,g         1
+  _Copter_Add_Yaw
+                                  fffe119e         4   func ,g         0
+FILE=.\src\OpenMV\OpenMV.obj
+                                  fffe11a2  fffe12fe       15d
+  _Follow_Car_SPI_Decode
+                                  fffe11a2        8d   func ,g         0
+  _Electric_Match_SPI_Decode
+                                  fffe122f        d0   func ,g         3
+FILE=.\src\PathSeeking\PathSeeking.obj
+                                  fffe12ff  fffe1987       689
+  _DistanceIndicatorRefresh
+                                  fffe12ff        83   func ,l         1
+  _Get_OpenMV_Data
+                                  fffe1382        5d   func ,l         8
+  _PID_to_BlackPoint
+                                  fffe13df        49   func ,l         2
+  _PID_to_Car
+                                  fffe1428        45   func ,l         1
+  _Takeoff_Stablize
+                                  fffe146d        45   func ,l         2
+  _Land_to_BlackPoint_with_PID
+                                  fffe14b2        68   func ,l         1
+  _Land_Evading_Car
+                                  fffe151a        d2   func ,l         2
+  _From_BlackPoint_to_Car
+                                  fffe15ec       27c   func ,l         2
+  _Follow_Car_Block
+                                  fffe1868        a5   func ,l         1
+  _Mission_One
+                                  fffe190d        2c   func ,g         1
+  _Mission_Two
+                                  fffe1939         3   func ,g         2
+  _Mission_Three
+                                  fffe193c        22   func ,g         1
+  _Mission_Four_and_Five
+                                  fffe195e        2a   func ,g         1
+FILE=.\src\Safety_Switch\Safety_Switch.obj
+                                  fffe1988  fffe1a94       10d
+  _Set_Mode_And_Safety_Switch
+                                  fffe1988       10d   func ,g         1
+FILE=.\src\Sc_AlgorithmTools\Sc_AlgorithmTools.obj
+                                  fffe1a95  fffe1ac8        34
+  _Sc_Trigger
+                                  fffe1a95         f   func ,g         0
+  _Sc_TimeHolder
+                                  fffe1aa4        24   func ,g         4
+  _Sc_Counter
+                                  fffe1ac8         1   func ,g         0
+FILE=.\src\Sc_CopterControl\Sc_CopterControl.obj
+                                  fffe1ac9  fffe1cf2       22a
+  _Sc_Set_SoftWare_Velocity
+                                  fffe1ac9        65   func ,g         6
+  _Sc_speed_limiter
+                                  fffe1b2e        2e   func ,l         4
+  _Sc_Set_SoftWare_Velocity_With_Speed_Limit
+                                  fffe1b5c        a6   func ,g         3
+  _Sc_Set_Real_Velocity
+                                  fffe1c02        11   func ,l         2
+  _Sc_Adjust_SoftWareHeadAngle
+                                  fffe1c13         c   func ,g         0
+  _Sc_Set_SoftWareHeadAngle
+                                  fffe1c1f         c   func ,g         0
+  _WrapDegtoRad
+                                  fffe1c2b        39   func ,g         0
+  _WrapRadtoDeg
+                                  fffe1c64        39   func ,g         0
+  _WrapDeg180
+                                  fffe1c9d        2b   func ,g         0
+  _WrapRad180
+                                  fffe1cc8        2b   func ,g         0
+FILE=.\src\Sc_PID\Sc_PID.obj
+                                  fffe1cf3  fffe1dd8        e6
+  _Sc_PID
+                                  fffe1cf3        73   func ,g         0
+  _Sc_PIDWithPosition
+                                  fffe1d66        73   func ,g        10
+FILE=.\src\Sc_Serial_Library_new\Sc_Serial_Library_new.obj
+                                  fffe1dd9  fffe1eaa        d2
+  _strlen
+                                  fffe1dd9         f   func ,l         1
+  _Bluetooth_Writestring
+                                  fffe1de8        31   func ,g         0
+  _my_printf
+                                  fffe1e19        3b   func ,g         6
+  _mavlink_printf
+                                  fffe1e54        57   func ,g         1
+FILE=.\src\Self_Check\Self_Check.obj
+                                  fffe1eab  fffe1f54        aa
+  _Follow_Car_Self_Check
+                                  fffe1eab        56   func ,g         1
+  _OpenMV_Assert
+                                  fffe1f01        54   func ,g         2
+FILE=.\src\cg_src\r_cg_cgc.obj
+                                  fffe1f55  fffe1fa0        4c
+  _R_CGC_Create
+                                  fffe1f55        4c   func ,g         1
+FILE=.\src\cg_src\r_cg_cmt.obj
+                                  fffe1fa1  fffe2046        a6
+  _R_CMT0_Create
+                                  fffe1fa1        2a   func ,g         1
+  _R_CMT0_Start
+                                  fffe1fcb        13   func ,g         1
+  _R_CMT0_Stop
+                                  fffe1fde        16   func ,g         0
+  _R_CMT1_Create
+                                  fffe1ff4        2a   func ,g         1
+  _R_CMT1_Start
+                                  fffe201e        13   func ,g         1
+  _R_CMT1_Stop
+                                  fffe2031        16   func ,g         0
+FILE=.\src\cg_src\r_cg_cmt_user.obj
+                                  fffe2047  fffe2087        41
+  _r_cmt_cmi0_interrupt
+                                  fffe2047        12   func ,l         0
+  _r_cmt_cmi1_interrupt
+                                  fffe2059         e   func ,l         0
+  _delay_ms
+                                  fffe2067        18   func ,g        20
+  _currenttime
+                                  fffe207f         9   func ,g        25
+FILE=.\src\cg_src\r_cg_hardware_setup.obj
+                                  fffe2088  fffe20c4        3d
+  _R_Systeminit
+                                  fffe2088        3b   func ,g         1
+  _HardwareSetup
+                                  fffe20c3         2   func ,g         1
+FILE=.\src\cg_src\r_cg_main.obj
+                                  fffe20c5  fffe217e        ba
+  _main
+                                  fffe20c5        42   func ,g         1
+  _R_MAIN_UserInit
+                                  fffe2107        78   func ,l         1
+FILE=.\src\cg_src\r_cg_port.obj
+                                  fffe217f  fffe21a8        2a
+  _R_PORT_Create
+                                  fffe217f        2a   func ,g         1
+FILE=.\src\cg_src\r_cg_rspi.obj
+                                  fffe21a9  fffe22e5       13d
+  _R_RSPI0_Create
+                                  fffe21a9        69   func ,g         1
+  _R_RSPI0_Start
+                                  fffe2212        1f   func ,g         1
+  _R_RSPI0_Stop
+                                  fffe2231        15   func ,g         0
+  _R_RSPI0_Send_Receive
+                                  fffe2246        40   func ,g         1
+  _SPI_Recv_One
+                                  fffe2286        57   func ,g         4
+  _SPI_Change_Send_Flag
+                                  fffe22dd         9   func ,g         0
+FILE=.\src\cg_src\r_cg_rspi_user.obj
+                                  fffe22e6  fffe23d5        f0
+  _r_rspi0_transmit_interrupt
+                                  fffe22e6        45   func ,l         0
+  _r_rspi0_receive_interrupt
+                                  fffe232b        56   func ,l         0
+  _r_rspi0_error_interrupt
+                                  fffe2381        29   func ,l         0
+  _r_rspi0_idle_interrupt
+                                  fffe23aa        17   func ,l         0
+  _r_rspi0_callback_transmitend
+                                  fffe23c1         a   func ,l         1
+  _r_rspi0_callback_receiveend
+                                  fffe23cb         a   func ,l         1
+  _r_rspi0_callback_error
+                                  fffe23d5         1   func ,l         1
+FILE=.\src\cg_src\r_cg_sbrk.obj
+                                  fffe23d6  fffe23f6        21
+  _sbrk
+                                  fffe23d6        21   func ,g         1
+FILE=.\src\cg_src\r_cg_sci.obj
+                                  fffe23f7  fffe2827       431
+  _R_SCI1_Create
+                                  fffe23f7        64   func ,g         1
+  _R_SCI1_Start
+                                  fffe245b        1b   func ,g         1
+  _R_SCI1_Stop
+                                  fffe2476        34   func ,g         0
+  _R_SCI1_Serial_Receive
+                                  fffe24aa        2c   func ,g         0
+  _R_SCI1_Serial_Send
+                                  fffe24d6        2e   func ,g         0
+  _R_SCI5_Create
+                                  fffe2504        64   func ,g         1
+  _R_SCI5_Start
+                                  fffe2568        1b   func ,g         1
+  _R_SCI5_Stop
+                                  fffe2583        34   func ,g         0
+  _R_SCI5_Serial_Receive
+                                  fffe25b7        2c   func ,g         0
+  _R_SCI5_Serial_Send
+                                  fffe25e3        2e   func ,g         0
+  _correct_sci1_rx_count
+                                  fffe2611        1e   func ,g         1
+  _SCI1_Serial_Receive
+                                  fffe262f        63   func ,g         1
+  _sci1_tx_is_idle
+                                  fffe2692         9   func ,g         0
+  _SCI1_Serial_Send
+                                  fffe269b        6c   func ,g         1
+  _SCI1_Start
+                                  fffe2707        15   func ,g         1
+  _correct_sci5_rx_count
+                                  fffe271c        1e   func ,g         1
+  _SCI5_Serial_Receive
+                                  fffe273a        64   func ,g         1
+  _sci5_tx_is_idle
+                                  fffe279e         9   func ,g         0
+  _SCI5_Serial_Send
+                                  fffe27a7        6c   func ,g         6
+  _SCI5_Start
+                                  fffe2813        15   func ,g         1
+FILE=.\src\cg_src\r_cg_sci_user.obj
+                                  fffe2828  fffe2b37       310
+  _r_sci1_transmit_interrupt
+                                  fffe2828        62   func ,l         0
+  _r_sci1_transmitend_interrupt
+                                  fffe288a        24   func ,l         0
+  _r_sci1_receive_interrupt
+                                  fffe28ae        49   func ,l         0
+  _r_sci1_receiveerror_interrupt
+                                  fffe28f7        1d   func ,l         0
+  _r_sci1_callback_transmitend
+                                  fffe2914         a   func ,l         1
+  _r_sci1_callback_receiveerror
+                                  fffe291e         1   func ,l         1
+  _r_sci5_transmit_interrupt
+                                  fffe291f        62   func ,l         0
+  _r_sci5_transmitend_interrupt
+                                  fffe2981        24   func ,l         0
+  _r_sci5_receive_interrupt
+                                  fffe29a5        49   func ,l         0
+  _r_sci5_receiveerror_interrupt
+                                  fffe29ee        1d   func ,l         0
+  _r_sci5_callback_transmitend
+                                  fffe2a0b         a   func ,l         1
+  _r_sci5_callback_receiveerror
+                                  fffe2a15         1   func ,l         1
+  _sci1_receive_available
+                                  fffe2a16         9   func ,g         2
+  _sci1_rx_circle_init
+                                  fffe2a1f        39   func ,g         1
+  _sci1_tx_circle_init
+                                  fffe2a58        3d   func ,g         1
+  _sci5_receive_available
+                                  fffe2a95         9   func ,g         2
+  _sci5_rx_circle_init
+                                  fffe2a9e        39   func ,g         1
+  _sci5_tx_circle_init
+                                  fffe2ad7        3d   func ,g         1
+  _sci1_receive_char
+                                  fffe2b14        12   func ,l         1
+  _Bluetooth_eat_one
+                                  fffe2b26        12   func ,g         1
+FILE=.\src\stdafx.obj
+                                  fffe2b38  fffe2b74        3d
+  _Software_Enabled
+                                  fffe2b38         9   func ,g         d
+  _Enable_Software
+                                  fffe2b41        1a   func ,g         1
+  _Disable_SoftWare
+                                  fffe2b5b        1a   func ,g         1
+FILE=cosf
+                                  fffe2b75  fffe2ba8        34
+  _cosl
+                                  fffe2b75         2   func ,g         0
+  _cos
+                                  fffe2b77         2   func ,g         1
+  _cosf
+                                  fffe2b79        30   func ,g         8
+FILE=sinf
+                                  fffe2ba9  fffe2be7        3f
+  _sinl
+                                  fffe2ba9         2   func ,g         0
+  _sin
+                                  fffe2bab         2   func ,g         1
+  _sinf
+                                  fffe2bad        3b   func ,g         8
+FILE=powf
+                                  fffe2be8  fffe2c14        2d
+  _powl
+                                  fffe2be8         2   func ,g         0
+  _pow
+                                  fffe2bea         2   func ,g         1
+  _powf
+                                  fffe2bec        29   func ,g         2
+FILE=vsprintf
+                                  fffe2c15  fffe2c48        34
+  _prout
+                                  fffe2c15         b   func ,l         1
+  _vsprintf
+                                  fffe2c20        29   func ,g         2
+FILE=__initsct
+                                  fffe2c49  fffe2c92        4a
+  __INITSCT
+                                  fffe2c49         0   none ,g         1
+  loop1
+                                  fffe2c5b         0   none ,l         1
+  next_loop1
+                                  fffe2c69         0   none ,l         2
+  loop3
+                                  fffe2c7b         0   none ,l         1
+  next_loop3
+                                  fffe2c8c         0   none ,l         2
+FILE=free
+                                  fffe2c93  fffe2d15        83
+  _free
+                                  fffe2c93        83   func ,g         5
+FILE=malloc
+                                  fffe2d16  fffe2df3        de
+  _findmem
+                                  fffe2d16        7b   func ,l         1
+  _malloc
+                                  fffe2d91        63   func ,g         4
+FILE=sample1
+                                  fffe2df4  fffe3f37      1144
+  crc_accumulate(unsigned char, unsigned short *)
+                                  fffe2df4        27   func ,l         4
+  crc_init(unsigned short *)
+                                  fffe2e1b         5   func ,l         2
+  crc_calculate(const unsigned char *, unsigned short)
+                                  fffe2e20        26   func ,l         1
+  crc_accumulate_buffer(unsigned short *, const char *, unsigned short)
+                                  fffe2e46        1d   func ,l         1
+  mavlink_get_channel_status(unsigned char)
+                                  fffe2e63         d   func ,l         5
+  mavlink_get_channel_buffer(unsigned char)
+                                  fffe2e70         f   func ,l         2
+  mavlink_finalize_message_chan(__mavlink_message *, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                                  fffe2e7f        63   func ,l         1
+  mavlink_finalize_message(__mavlink_message *, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                                  fffe2ee2        14   func ,l         b
+  mavlink_start_checksum(__mavlink_message *)
+                                  fffe2ef6         3   func ,l         2
+  mavlink_update_checksum(__mavlink_message *, unsigned char)
+                                  fffe2ef9         9   func ,l         7
+  mavlink_frame_char_buffer(__mavlink_message *, __mavlink_status *, unsigned char, __mavlink_message *, __mavlink_status *)
+                                  fffe2f02       15a   func ,l         1
+  mavlink_frame_char(unsigned char, unsigned char, __mavlink_message *, __mavlink_status *)
+                                  fffe305c        28   func ,l         1
+  mavlink_parse_char(unsigned char, unsigned char, __mavlink_message *, __mavlink_status *)
+                                  fffe3084        3e   func ,l         1
+  mav_array_memcpy(void *, const void *, unsigned long)
+                                  fffe30c2         b   func ,l         2
+  mavlink_msg_heartbeat_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, unsigned char, unsigned char, unsigned long, unsigned char)
+                                  fffe30cd        32   func ,l         1
+  mavlink_msg_set_mode_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, unsigned char, unsigned long)
+                                  fffe30ff        27   func ,l         1
+  mavlink_msg_attitude_decode(const __mavlink_message *, __mavlink_attitude_t *)
+                                  fffe3126        21   func ,l         1
+  mavlink_msg_local_position_ned_decode(const __mavlink_message *, __mavlink_local_position_ned_t *)
+                                  fffe3147        21   func ,l         1
+  mavlink_msg_request_data_stream_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, unsigned char, unsigned char, unsigned short, unsigned char)
+                                  fffe3168        2f   func ,l         2
+  mavlink_msg_command_long_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, unsigned char, unsigned short, unsigned char, float, float, float, float, float, float, float)
+                                  fffe3197        49   func ,l         2
+  mavlink_msg_command_ack_decode(const __mavlink_message *, __mavlink_command_ack_t *)
+                                  fffe31e0        19   func ,l         1
+  mavlink_msg_set_attitude_target_pack(unsigned char, unsigned char, __mavlink_message *, unsigned long, unsigned char, unsigned char, unsigned char, const float *, float, float, float, float)
+                                  fffe31f9        66   func ,l         1
+  mavlink_msg_set_position_target_local_ned_pack(unsigned char, unsigned char, __mavlink_message *, unsigned long, unsigned char, unsigned char, unsigned char, unsigned short, float, float, float, float, float, float, float, float, float, float, float)
+                                  fffe325f        5c   func ,l         2
+  mavlink_msg_set_velocity_body_pack(unsigned char, unsigned char, __mavlink_message *, unsigned long, unsigned char, unsigned char, float, float, float)
+                                  fffe32bb        34   func ,l         1
+  mavlink_msg_set_pid_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, unsigned char, unsigned char, float, float, float, float)
+                                  fffe32ef        38   func ,l         1
+  mavlink_msg_set_yaw_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, unsigned char, float)
+                                  fffe3327        27   func ,l         1
+  mavlink_msg_new_land_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, unsigned char, float, float, float, float, float, float)
+                                  fffe334e        3d   func ,l         1
+  mavlink_msg_optical_flow_decode(const __mavlink_message *, __mavlink_optical_flow_t *)
+                                  fffe338b        21   func ,l         1
+  mavlink_msg_set_home_position_pack(unsigned char, unsigned char, __mavlink_message *, unsigned char, long, long, long, float, float, float, const float *, float, float, float)
+                                  fffe33ac        76   func ,l         1
+  mavlink_msg_statustext_decode(const __mavlink_message *, __mavlink_statustext_t *)
+                                  fffe3422        1e   func ,l         1
+  SCM::SCM()
+                                  fffe3440         b   func ,l         1
+  SCM::~SCM()
+                                  fffe344b         b   func ,l         1
+  SCM::eulerAnglesToQuaternion(const float *, float *)
+                                  fffe3456        9a   func ,l         1
+  SCM::init(unsigned short (*)(unsigned char *, unsigned short), void (*)(unsigned long), unsigned long (*)(), void (*)(char *, ...))
+                                  fffe34f0         b   func ,g         1
+  Mavlink::~Mavlink()
+                                  fffe34fb        1e   func ,l         1
+  Mavlink::Mavlink()
+                                  fffe3519        1d   func ,g         1
+  Mavlink::S_heartbeat()
+                                  fffe3536        3a   func ,g         1
+  Mavlink::S_command_long(MAV_CMD, float, float, float, float, float, float, float)
+                                  fffe3570        62   func ,g         4
+  Mavlink::S_set_mode(unsigned char, unsigned long)
+                                  fffe35d2        45   func ,g         2
+  Mavlink::S_set_position_local(unsigned short, float, float, float)
+                                  fffe3617        a7   func ,g         3
+  Mavlink::S_set_attitude(float, float, float, float)
+                                  fffe36be       125   func ,g         1
+  Mavlink::S_set_velocity_body(float, float, float)
+                                  fffe37e3        48   func ,g         1
+  Mavlink::S_new_land(float, float, float, float, float, float)
+                                  fffe382b        45   func ,g         1
+  Mavlink::S_set_pid(float, float, float, float, float)
+                                  fffe3870        44   func ,g         1
+  Mavlink::S_set_yaw(float)
+                                  fffe38b4        33   func ,g         1
+  Mavlink::gyro_calibrate()
+                                  fffe38e7        4a   func ,g         1
+  Mavlink::data_request(unsigned char)
+                                  fffe3931        65   func ,g         1
+  Mavlink::home_position()
+                                  fffe3996        6a   func ,g         1
+  Mavlink::wait_result()
+                                  fffe3a00        45   func ,g         2
+  Mavlink::Receive(unsigned char)
+                                  fffe3a45        90   func ,g         1
+  Mavlink::cut()
+                                  fffe3ad5        37   func ,g         d
+  Mavcontrol::Mavcontrol()
+                                  fffe3b0c        1d   func ,l         1
+  Mavcontrol::~Mavcontrol()
+                                  fffe3b29        1e   func ,l         1
+  Mavcontrol::pre_arm()
+                                  fffe3b47        67   func ,g         1
+  Mavcontrol::arm()
+                                  fffe3bae        64   func ,g         1
+  Mavcontrol::disarm()
+                                  fffe3c12        44   func ,g         0
+  Mavcontrol::keep_heartbeat()
+                                  fffe3c56         3   func ,g         1
+  Mavcontrol::takeoff_check()
+                                  fffe3c59        23   func ,g         1
+  Mavcontrol::mav_takeoff(float)
+                                  fffe3c7c        59   func ,g         1
+  Mavcontrol::mav_takeoff_stabilize()
+                                  fffe3cd5        55   func ,g         1
+  Mavcontrol::set_vel(float, float, float)
+                                  fffe3d2a        16   func ,g         1
+  Mavcontrol::set_vel_new(float, float, float)
+                                  fffe3d40         3   func ,g         1
+  Mavcontrol::set_pid(float, float, float, float, float)
+                                  fffe3d43         f   func ,g         1
+  Mavcontrol::set_point(float, float, float)
+                                  fffe3d52        16   func ,g         0
+  Mavcontrol::set_point_vel(float, float, float)
+                                  fffe3d68        16   func ,g         1
+  Mavcontrol::set_attitude(float, float, float, float)
+                                  fffe3d7e        45   func ,g         1
+  Mavcontrol::mav_land()
+                                  fffe3dc3        25   func ,g         1
+  Mavcontrol::emergency_stop()
+                                  fffe3de8         3   func ,g         0
+  Mavcontrol::receive(unsigned char)
+                                  fffe3deb         3   func ,g         1
+  Mavcontrol::get_height()
+                                  fffe3dee         4   func ,g         1
+  Mavcontrol::get_velocity_x()
+                                  fffe3df2         4   func ,g         1
+  Mavcontrol::get_velocity_y()
+                                  fffe3df6         4   func ,g         1
+  Mavcontrol::fuck()
+                                  fffe3dfa         7   func ,g         1
+  _S_heartbeat
+                                  fffe3e01         9   func ,g         1
+  _mav_takeoff
+                                  fffe3e0a         b   func ,g         1
+  _mav_land
+                                  fffe3e15         8   func ,g         1
+  _set_vel
+                                  fffe3e1d        13   func ,g         0
+  _receive
+                                  fffe3e30         a   func ,g         1
+  _prearm
+                                  fffe3e3a         9   func ,g         1
+  _arm
+                                  fffe3e43         9   func ,g         1
+  _takeoff_check
+                                  fffe3e4c         9   func ,g         1
+  _init
+                                  fffe3e55        1c   func ,g         1
+  _get_height
+                                  fffe3e71         9   func ,g         1
+  _get_velocity_x
+                                  fffe3e7a         9   func ,g         0
+  _get_velocity_y
+                                  fffe3e83         9   func ,g         0
+  _mav_takeoff_stabilize
+                                  fffe3e8c         9   func ,g         0
+  _set_attitude
+                                  fffe3e95        1c   func ,g         0
+  _set_new_vel
+                                  fffe3eb1        13   func ,g         1
+  _new_land
+                                  fffe3ec4        24   func ,g         2
+  _set_pid
+                                  fffe3ee8        20   func ,g         0
+  _set_yaw
+                                  fffe3f08         b   func ,g         1
+  _gyro_calibrate
+                                  fffe3f13         9   func ,g         1
+  _fuck
+                                  fffe3f1c         9   func ,g         0
+  function which calls global constructor in compile unit
+                                  fffe3f25        13   func ,l         1
+FILE=_in_pows
+                                  fffe3f38  fffe4091       15a
+  __in_pows
+                                  fffe3f38       15a   func ,g         1
+FILE=sincosfsub
+                                  fffe4092  fffe4179        e8
+  ___poly_sinf
+                                  fffe4092        31   func ,g         3
+  ___poly_cosf
+                                  fffe40c3        28   func ,g         3
+  _poly_cosfn
+                                  fffe40eb         7   func ,l         1
+  _poly_sinfn
+                                  fffe40f2         5   func ,l         1
+  _sincosf_special
+                                  fffe40f7        33   func ,l         1
+  ___internal_sincosf
+                                  fffe412a        50   func ,g         4
+FILE=xprintf
+                                  fffe417a  fffe43e4       26b
+  __Printf
+                                  fffe417a       26b   func ,g         1
+FILE=delete
+                                  fffe43e5  fffe43ee         a
+  operator delete(void *)
+                                  fffe43e5         a   func ,g         3
+FILE=dtor_list
+                                  fffe43ef  fffe4439        4b
+  __process_needed_destructions()
+                                  fffe43ef        26   func ,g         1
+  ___already_marked_for_destruction
+                                  fffe4415         6   func ,g         1
+  ___record_needed_destruction
+                                  fffe441b        1d   func ,g         1
+  ___std__needed_destruction_list
+                                  fffe4438         2   func ,g         0
+FILE=new
+                                  fffe443a  fffe4477        3e
+  operator new(unsigned long)
+                                  fffe443a        3e   func ,g         3
+FILE=xgetmem
+                                  fffe4478  fffe4492        1b
+  __Getmem
+                                  fffe4478        1b   func ,g         1
+FILE=fmodf
+                                  fffe4493  fffe44c4        32
+  _fmodl
+                                  fffe4493         2   func ,g         0
+  _fmod
+                                  fffe4495         2   func ,g         1
+  _fmodf
+                                  fffe4497        2e   func ,g         2
+FILE=_i_ldes
+                                  fffe44c5  fffe4543        7f
+  __in_ldexps
+                                  fffe44c5        7f   func ,g         2
+FILE=_in_exps
+                                  fffe4544  fffe463e        fb
+  __in_exps
+                                  fffe4544        fb   func ,g         2
+FILE=_in_logs
+                                  fffe463f  fffe4705        c7
+  __in_logs
+                                  fffe463f        c7   func ,g         2
+FILE=nanfval
+                                  fffe4706  fffe470c         7
+  ___nanf_value
+                                  fffe4706         7   func ,g         1
+FILE=xputfld
+                                  fffe470d  fffe4ba3       497
+  __Putfld
+                                  fffe470d       497   func ,g         1
+FILE=xvacopy
+                                  fffe4ba4  fffe4bab         8
+  __Vacopy
+                                  fffe4ba4         8   func ,g         2
+FILE=xputtxt
+                                  fffe4bac  fffe4e90       2e5
+  __Puttxt
+                                  fffe4bac       2e5   func ,g         3
+FILE=strchr
+                                  fffe4e91  fffe4ea3        13
+  _strchr
+                                  fffe4e91        13   func ,g         2
+FILE=xctype
+                                  fffe4ea4  fffe4eb9        16
+  __Getpctype
+                                  fffe4ea4        16   func ,g         0
+FILE=error
+                                  fffe4eba  fffe4ebd         4
+  ___abort_execution
+                                  fffe4eba         4   func ,g         1
+FILE=newhandler
+                                  fffe4ebe  fffe4ebe         1
+  __default_new_handler()
+                                  fffe4ebe         1   func ,g         1
+FILE=_i_fmds
+                                  fffe4ebf  fffe4f96        d8
+  __in_fmods
+                                  fffe4ebf        d8   func ,g         1
+FILE=xldtob
+                                  fffe4f97  fffe5385       3ef
+  __Ldtob
+                                  fffe4f97       3ef   func ,g         1
+FILE=xputstr
+                                  fffe5386  fffe5465        e0
+  __Putstr
+                                  fffe5386        e0   func ,g         1
+FILE=xlitob
+                                  fffe5466  fffe557b       116
+  __Litob
+                                  fffe5466       116   func ,g         1
+FILE=xgenld
+                                  fffe557c  fffe583c       2c1
+  __Genld
+                                  fffe557c       2c1   func ,g         1
+FILE=xwctomb
+                                  fffe583d  fffe5992       156
+  __Wctombx
+                                  fffe583d       110   func ,g         1
+  __Wctomb
+                                  fffe594d        46   func ,g         1
+FILE=xstate
+                                  fffe5993  fffe59c4        32
+  __Getmbcurmax
+                                  fffe5993        16   func ,g         2
+  __Getpmbstate
+                                  fffe59a9        1c   func ,g         0
+FILE=xldscale
+                                  fffe59c5  fffe59c8         4
+  __LDscale
+                                  fffe59c5         4   func ,g         1
+FILE=xldunsca
+                                  fffe59c9  fffe59cc         4
+  __LDunscale
+                                  fffe59c9         4   func ,g         1
+FILE=__COM_DIV64u
+                                  fffe59cd  fffe5a65        99
+  __COM_DIV64u
+                                  fffe59cd         0   none ,g         2
+  _Loop_Init
+                                  fffe59d7         0   none ,l         2
+  _Loop
+                                  fffe59df         0   none ,l         1
+  _DivStart
+                                  fffe59eb         0   none ,l         3
+  _Success
+                                  fffe59f9         0   none ,l         1
+  _DivEnd
+                                  fffe5a05         0   none ,l         0
+  IXI6DIV
+                                  fffe5a0a         0   none ,l         1
+  IXI4DIV
+                                  fffe5a1c         0   none ,l         1
+  IXI2DIV
+                                  fffe5a2c         0   none ,l         1
+  I8I2DIV
+                                  fffe5a34         0   none ,l         1
+  I4I2DIV
+                                  fffe5a62         0   none ,l         1
+  _i8divU_End
+                                  fffe5a65         0   none ,l         0
+FILE=__COM_MOD64u
+                                  fffe5a66  fffe5aec        87
+  __COM_MOD64u
+                                  fffe5a66         0   none ,g         1
+  _Loop_Init
+                                  fffe5a70         0   none ,l         2
+  _Loop
+                                  fffe5a74         0   none ,l         1
+  _DivStart
+                                  fffe5a80         0   none ,l         3
+  _Success
+                                  fffe5a8e         0   none ,l         1
+  _DivEnd
+                                  fffe5a96         0   none ,l         0
+  IXI6DIV
+                                  fffe5a97         0   none ,l         1
+  IXI4DIV
+                                  fffe5aa9         0   none ,l         1
+  IXI2DIV
+                                  fffe5ab9         0   none ,l         1
+  I8I2DIV
+                                  fffe5ac1         0   none ,l         1
+  I4I2DIV
+                                  fffe5ae1         0   none ,l         1
+FILE=_div
+                                  fffe5aed  fffe5af8         c
+  _ldiv
+                                  fffe5aed         0   none ,g         1
+  _div
+                                  fffe5aed         0   none ,g         1
+FILE=localeco
+                                  fffe5af9  fffe5aff         7
+  _localeconv
+                                  fffe5af9         7   func ,g         1
+FILE=xwcstate
+                                  fffe5b00  fffe5b1b        1c
+  __Getpwcstate
+                                  fffe5b00        1c   func ,g         0
+FILE=xfdscale
+                                  fffe5b1c  fffe5c33       118
+  __FDscale
+                                  fffe5b1c       118   func ,g         1
+FILE=xfdunsca
+                                  fffe5c34  fffe5c8c        59
+  __FDunscale
+                                  fffe5c34        59   func ,g         1
+FILE=xfdnorm
+                                  fffe5c8d  fffe5d01        75
+  __FDnorm
+                                  fffe5c8d        75   func ,g         2
+
+SECTION=EXCEPTVECT
+FILE=.\src\cg_src\r_cg_vecttbl.obj
+                                  ffffff80  fffffffb        7c
+  _Excpt_Vectors
+                                  ffffff80        7c   data ,g         0
+
+SECTION=RESETVECT
+FILE=.\src\cg_src\r_cg_vecttbl.obj
+                                  fffffffc  ffffffff         4
+  _Reset_Vectors
+                                  fffffffc         4   data ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO

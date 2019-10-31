@@ -1,0 +1,27 @@
+[Header]
+Description=Renesas Flash Programmer Configuration File
+File Type=3.0
+[Device Info]
+Device Type=1
+Device Code=39303034
+Product Name=RX200 Series 
+Support FAW=TRUE
+Support ESW=TRUE
+Memory Area Count=1
+[Clock Info]
+Clock Mode=0
+Support Clock=
+OSC Frequency Range=32000000,32000000
+CPU Frequency Range=32000000,32000000
+SCI Frequency Range=32000000,32000000
+CPU Ratio=1/1
+SCI Ratio=1/1
+[Memory Area 0]
+Area Type=0x00000001
+Start Address=0xFFFE0000
+Size=0x00020000
+Erase Unit Size=0x00000800
+Write Unit Size=0x00000100
+Attribute=0x00000002
+[Checksum]
+Checksum=0x7A69D87A

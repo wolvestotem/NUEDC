@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RfpProject>
+  <FileVersion>V1.00.00</FileVersion>
+  <ProductVersion>V3.00.00 [09 Nov 2015]</ProductVersion>
+  <ParameterFile>RX200 Series.fcf</ParameterFile>
+  <DeviceType>DEVTYPE_RX200</DeviceType>
+  <OperationTab>
+    <Endian>RFLG_ENDIAN_LITTLE</Endian>
+    <ProgramFile>E:\Technical events\electric match 2017\Electric_Match_Final\HardwareDebug\Electric_Match_Final.mot</ProgramFile>
+  </OperationTab>
+  <OperationSettingTab>
+    <Fill0xFF>False</Fill0xFF>
+    <EraseBeforeProgram>False</EraseBeforeProgram>
+    <VerifyOption>VerifyOPT_ReadCommand</VerifyOption>
+    <VerifyOptionArea>False</VerifyOptionArea>
+    <EraseOption>EraseBlock</EraseOption>
+    <ChecksumOption>SUMTYPE_ADD32</ChecksumOption>
+    <ListOperation>Erase,Program,Verify</ListOperation>
+  </OperationSettingTab>
+  <BlockSettingTab>
+    <ListErase>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63</ListErase>
+    <ListPV>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63</ListPV>
+    <ListLockbit>
+    </ListLockbit>
+    <ListOTP>
+    </ListOTP>
+    <ListAW>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63</ListAW>
+  </BlockSettingTab>
+  <DeviceOptionTab>
+    <SetLockbit>False</SetLockbit>
+    <SetOTP>False</SetOTP>
+    <SetAW>False</SetAW>
+    <SetOPBT>False</SetOPBT>
+    <EnableExtendOPBT>False</EnableExtendOPBT>
+    <ListOPBT>ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff</ListOPBT>
+    <SetICUS>False</SetICUS>
+    <SetSecurity>False</SetSecurity>
+    <SecurityMode>Command</SecurityMode>
+    <DisableEraseCmd>False</DisableEraseCmd>
+    <DisableProgramCmd>False</DisableProgramCmd>
+    <DisableReadCmd>False</DisableReadCmd>
+    <DisableBootProgram>False</DisableBootProgram>
+    <SetIDandPWD>False</SetIDandPWD>
+    <IdCode>FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IdCode>
+    <CodeFlashPWD>
+    </CodeFlashPWD>
+    <DataFlashPWD>
+    </DataFlashPWD>
+    <SetDisableSerialProgram>False</SetDisableSerialProgram>
+  </DeviceOptionTab>
+  <ConnectOptionTab>
+    <Tool>COMMTYPE_E2L</Tool>
+    <ToolNum>Tool_AutoSelect</ToolNum>
+    <ToolPower>Power_0</ToolPower>
+    <ToolConnectMode>RFPSet</ToolConnectMode>
+    <ToolConnectPinOut>0</ToolConnectPinOut>
+    <ToolConnectPinLvl>0</ToolConnectPinLvl>
+    <ToolDisconnectReset>Low</ToolDisconnectReset>
+    <ToolInterface>IFTYPE_FINE</ToolInterface>
+    <ToolSpeed>1500000</ToolSpeed>
+    <ToolWideVoltage>False</ToolWideVoltage>
+    <MainClock>32000000</MainClock>
+    <AutoAuthen>True</AutoAuthen>
+    <IdCodeAuthen>FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IdCodeAuthen>
+    <CodeFlashPWDAuthen>
+    </CodeFlashPWDAuthen>
+    <DataFlashPWDAuthen>
+    </DataFlashPWDAuthen>
+  </ConnectOptionTab>
+</RfpProject>

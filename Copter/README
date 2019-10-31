@@ -1,0 +1,9 @@
+This is a part of Ardupilot-Copter-3.5 code, we mainly changed the following files:
+
+Copter.h
+control_guided.cpp
+defines.h
+GCS_Mavlink.h
+GCS_Mavlink.cpp
+
+The file "PID.h" and "PID.cpp" were copied from Ardupilot/libraries/PID .We placed them here only for convenience to inlcude.

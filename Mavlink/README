@@ -1,0 +1,1 @@
+This is all the definitions of Mavlink messages we added. You can add your messages by changing /message_definitions/common.xml and generate again.

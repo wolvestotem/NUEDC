@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "sc_serial_library_new.h": "c",
+        "sc_coptercontrol.h": "c"
+    }
+}

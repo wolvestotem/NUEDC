@@ -1,0 +1,3 @@
+This is the code in Renesas-RX23T, including the realization of all tasks.
+RX23T is a 32-bit microcontroller which is appionted by competition. We changed the interfaces they provided such as serial and SPI.
+All the files here should be compiled by e2studio. Notice that they cannot use C++ language in main function, you can use static library instead. "Mavcontrol.cpp" was one which was compiled to a static library.
